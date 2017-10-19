@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup_acitivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trip"
+    tools:context="com.plsr.sunil.trips.SignupAcitivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/linearlayoutcon"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="First Name"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView200"
+                android:textColor="@android:color/holo_red_dark"
+                android:minWidth="120dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/empty"
+                android:ems="10"
+                android:id="@+id/signupfirstname"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Last Name"
+                android:minWidth="120dp"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4943"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/empty"
+                android:ems="10"
+                android:id="@+id/signuplastname"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:minWidth="120dp"
+                android:text="Email"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView491221"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/empty"
+                android:ems="10"
+                android:id="@+id/signupemail"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:text="Password"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView49"
+                android:minWidth="120dp"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="@string/empty"
+                android:ems="10"
+                android:id="@+id/signuppassword"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup">
+
+            <RadioButton
+                android:text="Male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiomale"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <RadioButton
+                android:text="Female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radiofemale"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_red_dark"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/signupbutton1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/linearlayoutcon"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/transparent"
+            android:text="Sign up"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:text="OR"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:id="@+id/textView449"
+            android:textColor="@android:color/holo_red_dark"/>
+
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_gravity="center"
+            android:id="@+id/gsign"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"></com.google.android.gms.common.SignInButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

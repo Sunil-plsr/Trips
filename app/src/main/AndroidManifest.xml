@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.plsr.sunil.trips">
+
+<uses-permission android:name="android.permission.INTERNET" />
+
+<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name"
+    android:supportsRtl="true" android:theme="@style/AppTheme">
+    <activity android:name="com.plsr.sunil.trips.MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.plsr.sunil.trips.SignupAcitivity" />
+    <activity android:name="com.plsr.sunil.trips.HomeActivity" />
+    <activity android:name="com.plsr.sunil.trips.Settings" />
+    <activity android:name="com.plsr.sunil.trips.Search" />
+    <activity android:name="com.plsr.sunil.trips.FriendsRequest" />
+    <activity android:name="com.plsr.sunil.trips.CreateTrip" />
+    <activity android:name="com.plsr.sunil.trips.MyTrips" />
+    <activity android:name="com.plsr.sunil.trips.JoinedTrips" />
+    <activity android:name="com.plsr.sunil.trips.TripChat" />
+    <activity android:name="com.plsr.sunil.trips.MapsActivity" android:label="@string/title_activity_maps"/>
+
+    <!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCGKDrvjyS2GZw4wSvX5lIRFAdIFsRcIHc" />-->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCtgtodJwI9_xFsCQd3PvYl3JrU7QZBtas" />
+
+    <activity android:name="com.plsr.sunil.trips.AdditionalPlaces"></activity>
+</application>
+
+</manifest>

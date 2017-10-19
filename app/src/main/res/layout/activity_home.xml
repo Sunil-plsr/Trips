@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hbb"
+    tools:context="com.plsr.sunil.trips.HomeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layyyyyyyy"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/proemail"
+                    android:textColor="@android:color/holo_red_dark"
+                     />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/proname"
+                    android:textColor="@android:color/holo_red_dark"/>
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/progender"
+                    android:textColor="@android:color/holo_red_dark"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/batmann"
+                android:id="@+id/propic"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="friend requests(0)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seefriendsrequests"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:text="Discover trips"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/button4"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/trt"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <Button
+                android:text="create trip"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/cre"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/createtripp"
+                android:layout_weight="1"
+                android:textColor="@android:color/holo_red_dark"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:text="joined trips"
+                android:layout_width="147dp"
+                android:layout_height="100dp"
+                android:id="@+id/button43"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/trt"
+                android:textColor="@android:color/holo_red_dark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
